@@ -1,0 +1,253 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.nav{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.logo a img{
+    width: 200px;
+    height: 95px;
+    margin-left: 50px;
+}
+
+.hamburger-icon{
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+.hamburger-icon input[type="checkbox"] {
+    appearance: none;
+ }
+
+.navigation li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 40px ;
+}
+
+.navigation li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+#cart {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 3px 12px;
+}
+
+.landing{
+    width: 100%;
+    height: 640px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.landing-content{
+    width:100%;
+    height: 640px;
+    background-color: #e9e9e9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-img{
+    width: 100%;
+    height: 640px;
+    background-color: #1a402a;
+}
+
+.landing-img img{
+    width:100%;
+    height: 640px;
+    object-fit: cover;
+}
+
+.landing-heading{
+    margin-left: 150px;
+    font-size: 35px;
+}
+
+.landing-text{
+    margin-top: 10px;
+    margin-left: 150px;
+    font-size: 18px;
+}
+
+.landing-button{
+    margin-top: 20px;
+    margin-left: 150px;
+    padding: 10px;
+    background-color: #cce2d5;
+    border-color: #cce2d5;
+    color: #1a402a;
+}
+
+
+.icons-section{
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.s-icon img{
+    width: 150px;
+}
+
+.icons-div p{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+.content.section{
+    width: 100%;
+    height: 400px;
+}
+
+.content-row1{
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+.content-col11{
+    width: 100%;
+   background-color: aqua; 
+}
+.content-col12{
+    width: 100%;
+    background-color: beige;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+
+    .nav{
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    .navigation{
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+    .logo{
+        padding:0px 20px;
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo a img{
+        margin-left: 10px;
+    }
+
+    .hamburger-icon{
+        display: block;
+    }
+
+    .icons{
+        width: 50px;
+        height: 50px;
+    }
+
+    header:has(.hamburger-icon input[type="checkbox"]:checked) .navigation{
+                width: 100%;
+
+        height: 550px;
+        background-color: white;
+        z-index: 100;
+    }
+
+    .navigation{
+        align-content: center;
+    }
+
+    .navigation li{
+        margin-left: 45%;
+        margin-bottom: 5px;
+        display: flex;
+        align-content: center;
+    }
+    
+
+    .landing-section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .landing{
+        margin-top: -150px;
+        flex-wrap: wrap;
+    }
+
+    .landing-heading{
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+    .landing-text{
+        margin-left: 20px;
+    }
+
+    .landing-button{
+        margin-left: 20px;
+    }
+    
+    .landing{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .landing-img img{
+        width: 100%;
+    }
+
+    .icons-section{
+        flex-direction: column;
+    }
+    .icons-div{
+        margin-top: 30px;
+    }
+}
